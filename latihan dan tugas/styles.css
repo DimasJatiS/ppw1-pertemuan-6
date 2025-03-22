@@ -1,0 +1,140 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #aaa;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.hero img {
+    width: 80%; /* Supaya gambarnya nggak kepanjangan */
+    max-width: 1000px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Grid Section */
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f00; /* Warna merah */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    max-width: 150px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 1024px) and (min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Tengahin item di kolom */
+        gap: 10px; /* Beri jarak antar elemen */
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px; /* Jarak antar link */
+
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        gap: 5px; /* Jarak antar link */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Tengahin item di kolom */
+        gap: 10px; /* Beri jarak antar elemen */
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px; /* Jarak antar link */
+
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        gap: 5px; /* Jarak antar link */
+    }
+    
+    .grid {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px; /* Jarak antar link */
+    }
+
+    card {
+        width: 100% ;
+    }
+}
